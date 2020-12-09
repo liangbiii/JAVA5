@@ -32,9 +32,7 @@
 4、 设计字符输入和统计，利用遍历函数和equals函数进行统计个数，利用input函数进行键盘输入  
 5、 设计主函数，调用上面的函数，以及编辑显示信息，使学生信息、作业处理情况以及字符统计结果输出  
 ##  主要函数代码
-导包
-import java.io.*;
-import java.util.Scanner;
+
 学生类
 ```
 class Student{
