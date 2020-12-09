@@ -287,7 +287,8 @@ class Handle{
 }
 
 实验结果
-![image]（https://github.com/liangbiii/JAVA5/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201209221048.png）
+
+![image](https://github.com/liangbiii/JAVA5/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201209221048.png)
 
 实验感想
 
