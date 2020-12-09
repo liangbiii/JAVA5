@@ -1,10 +1,14 @@
 # JAVA5
 长恨歌
+
 实验目的：
+
 1、 掌握字符串String及其方法的使用
 2、 掌握文件的读取/写入方法
 3、 掌握异常处理结构
+
 实验内容
+
 在某课上,学生要提交实验结果，该结果存储在一个文本文件A中。
 文件A包括两部分内容： 
 1、 是学生的基本信息； 
@@ -13,11 +17,15 @@
 （2）、允许提供输入参数，统计古诗中某个字或词出现的次数  
 （3）、输入的文本来源于文本文件B读取，把处理好的结果写入到文本文件A  
 （4）、考虑操作中可能出现的异常，在程序中设计异常处理程序  
+
 实验要求
+
 1、 设计学生类（可利用之前的）；
 2、 采用交互式方式实例化某学生；
 3、 设计程序完成上述的业务逻辑处理，并且把“古诗处理后的输出”结果存储到学生基本信息所在的文本文件A中。
+
 实验设计
+
 设计思路：
 1、 学生类设计，（用的是实验二的学生类，成员变量有略微的调整）  
 2、 利用字符串的一些方法实现对古诗的格式化，以及添加字符奇数句子加“，”偶数句子加“。\n”实现换行以及分割。  
@@ -27,8 +35,11 @@
  （3）、 将处理好的字符串写入文件A   
 4、 设计字符输入和统计，利用遍历函数和equals函数进行统计个数，利用input函数进行键盘输入  
 5、 设计主函数，调用上面的函数，以及编辑显示信息，使学生信息、作业处理情况以及字符统计结果输出 
+
 主要函数代码
+
 学生代码
+
 class Student{
     public Student(){
 
@@ -73,6 +84,7 @@ class Student{
 }
 
 字符串处理类
+
 class Homework{
     public static StringBuffer HW(StringBuffer str1){
         StringBuffer str2 = new StringBuffer(str1);
@@ -93,7 +105,9 @@ class Homework{
     }
 
 }
+
 主函数
+
 public class experiment_5 {
     public static void main(String args[]) {
         Scanner input = new Scanner(System.in);
@@ -124,7 +138,9 @@ public class experiment_5 {
         System.out.println(z + "出现的次数为："+ z + "次");
     }
 }
+
 完整代码
+
 import java.io.*;
 import java.util.Scanner;
 
@@ -269,3 +285,10 @@ class Handle{
         return w;
     }
 }
+
+实验结果
+![image]（https://github.com/liangbiii/JAVA5/blob/main/%E5%BE%AE%E4%BF%A1%E5%9B%BE%E7%89%87_20201209221048.png）
+
+实验感想
+
+通过此次对字符串的处理，了解了字节流与字符流的使用及基本方法，懂得缓冲流的作用，并学会利用这些类的方法去操作文件及文件内容，以及异常的处理。
